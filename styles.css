@@ -1,0 +1,219 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    padding: 0.1rem;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 2rem;
+    background-color: #fafafa;
+    border-radius: 0.2rem;
+    box-shadow: 1px 1px 8px rgb(148, 148, 148);
+    position: sticky;
+    z-index: 9;
+    top: 0;
+}
+.icons{
+    display: flex;
+    gap: 1rem;
+    padding-right: 2rem;
+}
+.container{
+    min-width: 95vw;
+    display: flex;
+    padding: 1rem 8rem;
+    flex-direction: column;
+    gap: 2rem;
+}
+.titleContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+    color: #1d42fc;
+}
+.submitBtn{
+    background-color: #0029FF;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.7rem;
+    color: white;
+    font-size: 14px;
+}
+.submitBtn:hover{
+    box-shadow: 1px 1px 8px #647dfc;
+    transition: 0.3s;
+}
+.titleDescription{
+    padding: 1.2rem 0.9rem;
+    background-color: #E9ECEF;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border-radius: 0.3rem;
+}
+.cardsContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    justify-items: center;
+    align-items: center;
+    padding: 0.2rem;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 35vw;
+    max-width: 35vw;
+    border-radius: 1rem;
+    min-height: 70vh;
+    max-height: 70vh;
+    overflow: hidden;
+    box-shadow: 1px 1px 8px rgb(110, 110, 110);
+}
+.cardTitle{
+    padding:0.7rem 1rem;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.cardInfoContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    overflow: scroll;
+}
+.bold{
+    font-weight: bold;
+}
+.threadInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-between;
+}
+.subthreadInputContainer{
+    display: flex;
+    gap: 0.5rem;
+}
+.subThread{
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+}
+.subThreadLabel{
+    background-color: #EFEFEF;
+    font-size: 14px;
+    padding: 0.5rem;
+    padding-bottom: 1rem;
+    border-radius: 0.8rem;
+    justify-self: center;
+    position: relative;
+    box-shadow: 1px 1px 8px rgb(132, 131, 131);
+}
+input{
+    border: none;
+    outline: none;
+}
+.subThreadInput{
+    padding: 0.4rem;
+    font-size: 12px;
+    height: 4rem;
+    position: relative;
+    top: -0.8rem;
+    border-bottom-left-radius:0.8rem;
+    border-bottom-right-radius:0.8rem;
+    box-shadow: 1px 1px 8px rgb(132, 131, 131);
+}
+.summaryOfA{
+    min-width: 100%;
+}
+.summaryinput{
+    min-height: 8rem;
+}
+.pointerCardInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+.pointerTitleInput{
+    padding: 0.5rem;
+    box-shadow: 1px 1px 8px rgb(132, 131, 131);
+    border-radius: 0.6rem;
+    min-width: 100%;
+    margin-top: 0.5rem;
+}
+.content{
+    display: flex;
+    font-size: 13px;
+    justify-content: space-between;
+    background-color: #fcf8f8;
+    padding: 0.7rem;
+    padding-bottom: 1.3rem;
+    border-radius: 0.8rem;
+    justify-self: center;
+    position: relative;
+    box-shadow: 1px 1px 8px rgb(132, 131, 131);
+}
+.pointerTetarea{
+    min-width: 100%;
+}
+textarea{
+    border: none;
+}
+textarea:focus{
+    outline: none;
+    border: none;
+}
+.saInfo{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    gap: 2rem;
+}
+.sa{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.sa p{
+    font-size: 14px;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.journeyBoard{
+    position: fixed;
+    left: -25rem;
+    background-color: #fafafa;
+}
+.journeyBoard:hover{
+    transition: 0.7s;
+    left: -0.5rem;
+    z-index: 2;
+}
+
+
+
+
+::-webkit-scrollbar {
+    width: 0.3rem;  /* Width of the scrollbar */
+}
+
+/* Styling the thumb part of the scrollbar */
+::-webkit-scrollbar-thumb {
+background-color:  rgb(166, 164, 164);/* Color of the scrollbar thumb */
+border-radius: 5px;      /* Rounded corners for the thumb */
+}
