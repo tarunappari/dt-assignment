@@ -1,3 +1,5 @@
+//this api is not allowing me to access the resource so i cant able to fetch the data from api thats i had to hard code the website instead of making it dynamic
+//if can able to fetch the api then ill do conditional rendering of card based on the asset_title which was present in every object
 
 let tasks;
 
