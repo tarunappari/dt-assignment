@@ -204,6 +204,13 @@ a{
     left: -0.5rem;
     z-index: 2;
 }
+.noticeBoard{
+    position: fixed;
+    right: -23rem;
+    background-color: #fafafa;
+    transform: rotate(-90deg);
+    top: 6rem;
+}
 
 
 
