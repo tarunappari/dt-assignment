@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DT-Assignment</title>
+    <link rel="icon" type="image/x-icon" href="/images/Screenshot 2024-02-21 093012.png">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,156 +29,37 @@
         <span class="material-icons">person</span>
       </div>
     </div>
-    <div class="journeyBoard card" style="margin: 1rem;" >
+    <div class="journeyBoard card" style="margin: 1rem">
       <h2 class="cardTitle">Journey Board</h2>
-      <div style="display: flex;flex-direction: column;gap: 2rem;padding: 2rem;">
+      <div
+        style="display: flex; flex-direction: column; gap: 2rem; padding: 2rem"
+      >
         <h3>Explore the world of management</h3>
-      <ul style="display: flex;flex-direction: column;gap: 1rem;">
-        <li><a href="#tech">Technical Project Management</a></li>
-        <li><a href="#thread">Threadbuild</a></li>
-        <li><a href="#pointer">Structure your pointers</a></li>
-        <li><a href="#sa">4SA Method</a></li>
-      </ul>
+        <ul style="display: flex; flex-direction: column; gap: 1rem">
+          <li><a href="#tech">Technical Project Management</a></li>
+          <li><a href="#thread">Threadbuild</a></li>
+          <li><a href="#pointer">Structure your pointers</a></li>
+          <li><a href="#sa">4SA Method</a></li>
+        </ul>
       </div>
     </div>
-    <div class="container">
+    <div id="noticeBoard" class="noticeBoard card" style="margin: 1rem">
+      <h3 class="cardTitle" style="letter-spacing: 1rem;display: flex; justify-content: space-around;align-items: center;cursor: pointer;">Notice Board <span class="material-icons" id="closeBtn">close</span></h3>
+    </div>
+    <div class="container" id="container">
       <div class="titleContainer">
         <div class="title">
-          <h2>technical project manager</h2>
+          <h2 id="mainTitle"></h2>
           <button class="submitBtn">Submit Task</button>
         </div>
         <div class="titleDescription">
-          <h4 class="taskTitle">explore the world</h4>
-          <p class="taskDescription" style="font-size: 15px">
-            As a project manager, you play an important role in leading a
-            project through initiation, planning, execution, monitoring,
-            controlling and completion. How? Do you want to manage each and
-            every step of your life?
+          <h4 class="taskTitle" id="taskTitle"></h4>
+          <p class="taskDescription" style="font-size: 15px" id="taskDescription">
           </p>
         </div>
       </div>
-      <div class="cardsContainer">
-        <section class="card" id="tech">
-          <div class="cardTitle">technical project manager</div>
-          <div class="cardInfoContainer">
-            <div class="cardDesc">
-              <span class="bold">Description : </span
-              ><span
-                >Story of Alignment Scope of Agility Specific Accountable
-                Staggering Approach</span
-              >
-            </div>
-            <div class="cardInfo">
-              <a
-                href="https://www.youtube.com/embed/TiMRwri1xJ8"
-                target="_blank"
-                ><img src="./images/image 13.png" alt="yt" style="width: 26rem"
-              /></a>
-            </div>
-          </div>
-        </section>
-        <section class="card" id="thread">
-          <div class="cardTitle">Threadbuild</div>
-          <div class="cardInfoContainer">
-            <div class="cardDesc">
-              <span class="bold">Description : </span
-              ><span
-                >Watch the video and thread build, and jot out key threads while
-                watching that video.</span
-              >
-            </div>
-            <div class="cardInfo threadInfo">
-              <h3>Thread A</h3>
-              <div class="subthreadInputContainer">
-                <div class="subThread">
-                  <label for="thread1" class="subThreadLabel"
-                    >Sub thread 1</label
-                  >
-                  <input
-                    type="text"
-                    placeholder="Enter Text Here"
-                    class="subThreadInput"
-                  />
-                </div>
-                <div class="subThread">
-                  <label for="thread2" class="subThreadLabel"
-                    >Sub thread 1</label
-                  >
-                  <input
-                    type="text"
-                    placeholder="Enter Text Here"
-                    class="subThreadInput"
-                  />
-                </div>
-              </div>
-              <div class="subThreadButton">
-                <button class="submitBtn">+ Sub-thread</button>
-              </div>
-              <div class="summaryOfA subThread">
-                <label for="summary" class="subThreadLabel"
-                  >Summary for Thread A</label
-                >
-                <textarea
-                  class="subThreadInput summaryinput"
-                  placeholder="Enter Text Here"
-                ></textarea>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="card" id="pointer">
-          <div class="cardTitle">Structure you pointers</div>
-          <div class="cardInfoContainer">
-            <div class="cardDesc">
-              <span class="bold">Description : </span
-              ><span
-                >Write a 300 - 400 word article from your thread . Publish your
-                understanding and showcase your understanding to the entire
-                world
-              </span>
-            </div>
-            <div class="pointerCardInfo">
-              <div class="pointerTitle">
-                <h4>Title</h4>
-                <input type="text" class="pointerTitleInput"/>
-              </div>
-              <div class="pointerContent">
-                <div class="content">
-                  <div>File</div>
-                  <div>Edit</div>
-                  <div>View</div>
-                  <div>Insert</div>
-                  <div>Format</div>
-                  <div>Tools</div>
-                  <div>Table</div>
-                  <div>Help</div>
-                </div>
-                <div>
-                  <textarea class="subThreadInput summaryinput pointerTetarea"></textarea>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="card" id="sa">
-          <div class="cardTitle">4SA Method</div>
-          <div class="cardInfoContainer">
-            <div class="cardDesc">
-              <span class="bold">Description : </span
-              ><span>To explore more read more</span>
-            </div>
-            <div class="saInfo">
-              <div class="sa">
-                <h4>Introduction</h4>
-                <p>The 4SA Method , How to bring a idea into progress ?</p>
-              </div>
-              <div class="sa">
-                <h4>Thread A</h4>
-                <p>How are you going to develop your stratergy ? Which method are you going to use to develop a stratergy ? What if the project is lengthy?</p>
-              </div>
-            </div>
-          </div>
-        </section>
+      <div class="cardsContainer" id="cardsContainer">
+                 
       </div>
     </div>
 
